@@ -1,4 +1,3 @@
-// import { TodoClient } from "./interface";
 import { TodoClient } from './TodoClient';
 import { inject, injectable } from 'inversify';
 import "reflect-metadata";

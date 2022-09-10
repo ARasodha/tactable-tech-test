@@ -4,15 +4,18 @@ import { ApiManager } from "../src/ApiManager";
 import { mockData } from "../src/__mocks__/mockData";
 
 jest.mock('../src/TodoClient');
+const spy = jest.spyOn(ApiManager.prototype, "fetchData").mockResolvedValue(mockData);
 
 describe('integration test', () => {
   it('validating the client being injected properly', () => {
     const todoClient = new TodoClient();
     const apiManager = new ApiManager(todoClient);
 
-    apiManager.fetchData().then((res) => {
+    apiManager.fetchData().then((data) => {
       
-      expect(res.data).toEqual(mockData);
+      expect(data).toEqual(mockData);
     });
+
+    expect(spy).toHaveBeenCalled();
   });
 });

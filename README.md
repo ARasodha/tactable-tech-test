@@ -1,4 +1,4 @@
-# Arjun Rasodha's Tech Test for Tactable
+# Arjun Rasodha's Technical Test for Tactable
 
 ## To reviewing team:
 - please run `npm install` to install project dependencies

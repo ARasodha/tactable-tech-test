@@ -1,6 +1,6 @@
 # Arjun Rasodha's Tech Test for Tactable
 
-## To reviewing team member:
+## To reviewing team:
 - please run `npm install` to install project dependencies
 - `npm run test` can be used to run the tests
 

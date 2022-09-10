@@ -9,7 +9,7 @@ export class ApiManager implements Manager {
   private todoClient: TodoClient;  
 
   constructor(@inject("TodoClient") todoClient:TodoClient) {
-    this.todoClient = todoClient ;
+    this.todoClient = todoClient;
   }
 
   async fetchData() {

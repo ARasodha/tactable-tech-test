@@ -11,7 +11,8 @@ describe('integration test', () => {
     const apiManager = new ApiManager(todoClient);
 
     apiManager.fetchData().then((res) => {
+      
       expect(res.data).toEqual(mockData);
-    })
-  })
-})
+    });
+  });
+});

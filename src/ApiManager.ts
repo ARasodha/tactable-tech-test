@@ -2,7 +2,7 @@
 import { TodoClient } from './TodoClient';
 import { inject, injectable } from 'inversify';
 import "reflect-metadata";
-import { IApiManager, Todo } from './interface'
+import { IApiManager, Todo } from './interface';
 
 @injectable()
 export class ApiManager implements IApiManager {
@@ -13,7 +13,6 @@ export class ApiManager implements IApiManager {
   }
 
   async fetchData(): Promise<Todo[]> {
-    const response = await this.todoClient.makeCall();
-    return response;
+    return await this.todoClient.makeCall();
   }
 }

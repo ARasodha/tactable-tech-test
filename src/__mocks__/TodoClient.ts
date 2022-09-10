@@ -3,6 +3,6 @@ import { mockData } from "./mockData";
 
 export class TodoClient {
   async makeCall() {
-    return new Promise((resolve) => resolve({ data: mockData }));
+    return new Promise((resolve) => resolve(mockData));
   }
 }
